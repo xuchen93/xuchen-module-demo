@@ -1,0 +1,13 @@
+spring:
+  jackson:
+    time-zone: GMT+8
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    url: jdbc:p6spy:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    #    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    username: test
+    password: 123456test

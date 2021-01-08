@@ -1,0 +1,11 @@
+xuchen:
+  module:
+    request:
+      log: true
+spring:
+  redis:
+    host: localhost
+    password: password
+    port: 16379
+    database: 1
+    timeout: 300

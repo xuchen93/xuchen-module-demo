@@ -1,0 +1,13 @@
+selenium:
+  retryCount: 3
+  sleepMillis: 5000
+  proxyMethod:
+    - findElementByXPath
+  chrome:
+    driver:
+      path: F:\software\chromedriver.exe
+      options:
+        #        - headless
+        - disable-plugins
+        - no-sandbox
+        - window-size=1400,1600
