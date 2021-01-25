@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.github.xuchen93</groupId>
-    <artifactId>module-demo</artifactId>
+    <artifactId>xuchen-module-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>module-demo</name>
+    <name>xuchen-module-demo</name>
     <description>Demo projtableect for use xuchen-module</description>
 
     <modules>
