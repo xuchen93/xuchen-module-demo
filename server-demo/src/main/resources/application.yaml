@@ -3,10 +3,14 @@ xuchen:
     request:
       log: true
       detail: true
-      check-token: false
       limit: true
     redis:
       prefix: demo:server
+    log:
+      enable-file: false
+      project-name: server-demo
+      level: info
+      path: server-demo/logs
 spring:
   jackson:
     time-zone: GMT+8

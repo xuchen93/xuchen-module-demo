@@ -4,7 +4,7 @@ xuchen:
       log: true
 spring:
   redis:
-    host: localhost
+    host: 114.67.100.84
     password: password
     port: 16379
     database: 1
