@@ -4,7 +4,6 @@ import cn.hutool.extra.spring.SpringUtil;
 import com.github.xuchen93.model.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.SimpleThreadScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

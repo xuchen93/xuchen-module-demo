@@ -1,10 +1,12 @@
 package com.github.xuchen93.controller;
 
 import com.github.xuchen93.model.R;
-import com.github.xuchen93.service.TestService;
+import com.github.xuchen93.model.TestModel;
+import com.github.xuchen93.web.controller.BaseController;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
@@ -14,14 +16,17 @@ import java.time.LocalDateTime;
  */
 @Slf4j
 @RestController
-public class TestController {
+public class TestController extends BaseController {
 
-	@Autowired
-	private TestService testService;
 
 	@GetMapping("test")
 	public R test() {
-		testService.async();
+		return R.success(LocalDateTime.now().toString());
+	}
+
+	@SneakyThrows
+	@PostMapping("post")
+	public R post(TestModel model) {
 		return R.success(LocalDateTime.now().toString());
 	}
 }
