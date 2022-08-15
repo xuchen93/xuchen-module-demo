@@ -1,6 +1,9 @@
 package com.github.xuchen93;
 
 import cn.hutool.core.thread.ThreadUtil;
+import cn.hutool.extra.spring.SpringUtil;
+import com.github.xuchen93.controller.TestController;
+import com.github.xuchen93.core.util.RedisStore;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -16,7 +19,7 @@ class WebDemoApplicationTests {
 	@SneakyThrows
 	@Test
 	void contextLoads() {
-		ThreadUtil.sleep(100000);
-		log.info("test method");
+
+		RedisStore.setValue("testK","testV1");
 	}
 }

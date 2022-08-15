@@ -21,19 +21,21 @@ import java.util.List;
  */
 @Slf4j
 @Controller
-//@Component
 @ResponseBody
 public class TestController extends BaseController {
 
 
 	@GetMapping("test")
-	public R test() {
+	public R test11() {
+		ThreadLocal threadLocal = new ThreadLocal();
+		threadLocal.set("key");
+		threadLocal.remove();
 		return R.success(LocalDateTime.now().toString());
 	}
 
 	@SneakyThrows
 	@PostMapping("post")
-	public R post(TestModel model) {
+	public R post111(TestModel model) {
 		log.info(JSONUtil.toJsonStr(model));
 		return R.success(LocalDateTime.now().toString());
 	}
