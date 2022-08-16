@@ -2,6 +2,10 @@ xuchen:
   module:
     request:
       log: true
+    log:
+      app-name: web-demo
+      enable-file: true
+      file-path: ./web-demo-log
 spring:
   redis:
     host: 114.67.100.84
