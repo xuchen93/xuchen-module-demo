@@ -2,6 +2,9 @@ xuchen:
   module:
     request:
       log: true
+    log:
+      app-name: web-cache-demo
+      enable-file: false
 spring:
   redis:
     host: localhost

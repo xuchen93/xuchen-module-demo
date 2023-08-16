@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.github.xuchen93</groupId>
-        <artifactId>xuchen-module-demo</artifactId>
+        <artifactId>module-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 

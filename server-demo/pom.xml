@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.github.xuchen93</groupId>
-        <artifactId>xuchen-module-demo</artifactId>
+        <artifactId>module-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -17,23 +17,6 @@
             <groupId>com.github.xuchen93</groupId>
             <artifactId>module-server</artifactId>
             <version>${xuchenModule.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.codehaus.janino</groupId>
-            <artifactId>janino</artifactId>
-            <version>3.0.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.janino</groupId>
-            <artifactId>commons-compiler</artifactId>
-            <version>3.0.8</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>4.1.2</version>
         </dependency>
     </dependencies>
 </project>
