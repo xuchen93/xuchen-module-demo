@@ -11,12 +11,12 @@ spring:
   jackson:
     time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://121.4.58.44:3310/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: test
     password: 123456test
   redis:
-    host: localhost
+    host: 121.4.58.44
     password: password
     port: 16379
     database: 1
