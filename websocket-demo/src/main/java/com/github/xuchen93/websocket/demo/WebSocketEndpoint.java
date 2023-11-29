@@ -6,7 +6,6 @@ import io.netty.handler.codec.http.HttpHeaders;
 import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.MultiValueMap;
-import org.yeauty.annotation.BeforeHandshake;
 import org.yeauty.annotation.OnBinary;
 import org.yeauty.annotation.OnClose;
 import org.yeauty.annotation.OnError;
@@ -28,7 +27,6 @@ import java.util.Map;
 @Slf4j
 @ServerEndpoint(path = "/ws/{arg}",port = "8800",allIdleTimeSeconds="10",readerIdleTimeSeconds = "5")
 public class WebSocketEndpoint {
-
 
 	@OnOpen
 	public void onOpen(Session session, HttpHeaders headers, @RequestParam String req, @RequestParam MultiValueMap reqMap, @PathVariable String arg, @PathVariable Map pathMap){
@@ -63,6 +61,8 @@ public class WebSocketEndpoint {
 
 	@OnEvent
 	public void onEvent(Session session, Object evt) {
+		System.out.println(evt);
+		System.out.println(evt.getClass());
 		if (evt instanceof IdleStateEvent) {
 			IdleStateEvent idleStateEvent = (IdleStateEvent) evt;
 			switch (idleStateEvent.state()) {

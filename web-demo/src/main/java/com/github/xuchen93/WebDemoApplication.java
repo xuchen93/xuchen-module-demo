@@ -2,17 +2,15 @@ package com.github.xuchen93;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 
-@EnableAsync
-@EnableScheduling
+//@EnableAsync
+//@EnableScheduling
 @SpringBootApplication
 public class WebDemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WebDemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WebDemoApplication.class, args);
+    }
 
 }

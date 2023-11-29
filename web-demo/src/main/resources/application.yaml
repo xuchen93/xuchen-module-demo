@@ -9,3 +9,7 @@ spring:
     port: 16379
     database: 1
     timeout: 300
+server:
+  tomcat:
+    threads:
+      max: 1

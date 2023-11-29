@@ -7,23 +7,23 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>websocket-demo</artifactId>
+	<artifactId>websocket-netty-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>websocket-demo</name>
-	<description>websocket-demo</description>
+	<name>websocket-netty-demo</name>
+	<description>websocket-netty-demo</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.github.xuchen93</groupId>
-			<artifactId>module-core</artifactId>
+			<artifactId>module-web</artifactId>
 			<version>${xuchenModule.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.yeauty</groupId>
-			<artifactId>netty-websocket-spring-boot-starter</artifactId>
-			<version>0.11.0</version>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
 		</dependency>
+
 	</dependencies>
 
 </project>
